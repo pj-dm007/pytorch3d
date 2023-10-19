@@ -49,7 +49,7 @@ def get_extensions():
     source_cuda = glob.glob(os.path.join(extensions_dir, "**", "*.cu"), recursive=True)
     extension = CppExtension
 
-    extra_compile_args = {"cxx": ["-std=c++17"]}
+    extra_compile_args = {"cxx": []}
     define_macros = []
     include_dirs = [extensions_dir]
 
